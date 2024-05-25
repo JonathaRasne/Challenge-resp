@@ -1,0 +1,97 @@
+/* Estilos base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('pixelcut-export.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os elementos se ajustem sem quebrar a linha */
+}
+
+.search-container input[type="text"],
+.search-container input[type="submit"] {
+    padding: 10px;
+    margin: 5px; /* Espaçamento uniforme */
+    flex: 1; /* Ocupa o espaço disponível */
+    min-width: 150px; /* Largura mínima para os inputs */
+}
+
+.description {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os serviços se ajustem sem quebrar a linha */
+    gap: 10px; /* Espaçamento entre os serviços */
+}
+
+.service {
+    flex: 1; /* Ocupa o espaço disponível */
+    min-width: 150px; /* Largura mínima para os serviços */
+    max-width: 157.94px; /* Largura máxima para os serviços */
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .header, .search-container, .description, .services {
+        flex-direction: column;
+    }
+
+    .service {
+        width: 100%; /* Ocupa toda a largura disponível */
+    }
+}
+
+.menu-mobile span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: rgb(0, 0, 0);
+    border-radius: 3px;
+}
+.navbar {
+    display: flex; /* Usa flexbox para alinhar os itens */
+    justify-content: space-around; /* Distribui o espaço uniformemente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #07AEF0; /* Cor de fundo da barra de navegação */
+    color: rgb(255, 255, 255); /* Cor do texto */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white; /* Cor do texto dos links */
+    padding: 14px 16px; /* Espaçamento interno para os links */
+}
+
+/* Estilos para mudar a aparência ao passar o mouse */
+.navbar a:hover {
+    background-color: #dddddd; /* Cor de fundo ao passar o mouse */
+    color: black; /* Cor do texto ao passar o mouse */
+}

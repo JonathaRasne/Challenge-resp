@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- saved from url=(0105)file:///C:/Users/Jonatha%20Rasne/OneDrive/%C3%81rea%20de%20Trabalho/CHALLENGR%20IMAGENS/TELAPRIMEIRA.html -->
+<html lang="pt"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="login.css">
+<title>Tela de Login1</title>
+<style>
+
+</style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="logo-container">
+      
+      <img src="download.png" alt="Logo PORTO SEGURO Transparente">
+    </div>
+    <form id="loginForm">
+      <div class="form-input">
+       
+        <img src="icons8-nome-50.png" alt="Ícone Usuário">
+        <label for="email">Usuário ou E-mail</label>
+        <input type="text" id="email" name="email" required="">
+      </div>
+      <div class="form-input">
+        
+        <img src="icons8-nome-50.png" alt="Ícone Senha">
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" required="">
+      </div>
+      <div class="form-input">
+        <input type="submit" value="Entrar">
+      </div>
+    </form>
+    <div class="login-footer">
+      <p>Não tem uma conta? <a href="Tela de cadastro.html">Cadastre-se</a></p>
+    </div>
+  </div>
+  <script>
+    document.getElementById('loginForm').onsubmit = function(event) {
+      event.preventDefault();
+      // Aqui você pode adicionar a lógica para validar e processar o formulário
+      alert('Bem-vindo!');
+    };
+  </script>
+
+</body></html>

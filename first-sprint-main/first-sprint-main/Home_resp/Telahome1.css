@@ -1,0 +1,100 @@
+/* Estilos base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('pixelcut-export.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fbfbfb;
+    padding: 10px 0;
+}
+
+.nav a {
+    color: #008BCE;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav a:hover {
+    background-color: #555;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container input[type="text"],
+.search-container input[type="submit"] {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.search-container input[type="submit"] {
+    background-color: #008BCE;
+    color: white;
+    border: none;
+}
+
+.description {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(218, 218, 218, 0.8);
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
+}
+
+.round-img {
+    border-radius: 50%;
+}
+
+.services {
+    display: flex;
+    justify-content: center; /* Centraliza os serviços */
+    flex-wrap: wrap; /* Permite que os itens se ajustem conforme o tamanho da tela */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+.service-item {
+    width: 157.94px;
+    height: 144px;
+    margin: 0 auto; /* Centraliza cada item de serviço */
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .nav, .search-container, .services {
+        flex-direction: column;
+    }
+
+    .nav a,
+    .search-container input[type="text"],
+    .search-container input[type="submit"] {
+        margin: 10px 0; /* Adiciona margem superior e inferior para espaçamento */
+    }
+
+    .service-item {
+        width: 100%; /* Ajusta a largura para ocupar toda a largura disponível */
+        max-width: 157.94px; /* Mantém a largura máxima conforme o design original */
+    }
+}
